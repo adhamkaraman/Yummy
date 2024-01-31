@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/delicious_food.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <section class="loading">
+        <i class="fa-solid fa-utensils fa-spin fa-4x" style="color: #ffffff;"></i>
+    </section>
+
+    <div id="sideBar">
+
+        <div id="sideBarInner" class="bg-black text-white p-4 pt-4 fw-medium w-50">
+            <ul class="list-unstyled navList">
+                <li onclick="getSearchData()" class="pb-3">Search</li>
+                <li onclick="geCategoData()" class="pb-3">Categories</li>
+                <li onclick="getAreaData()" class="pb-3">Area</li>  
+                <li onclick="getIngredData()" class="pb-3">Ingredients</li>
+                <li onclick="showContactPage()" class="pb-3">Contact</li>
+            </ul>
+            <div>
+                <i class="fa-brands fa-facebook"></i><i class="fa-brands fa-twitter p-2"></i><i class="fa-brands fa-instagram"></i>
+                <p style="font-size: 13px;">Copyright Â© 2024 All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <div id="sideBarOutter" class="bg-light p-2 pt-4 iconsDiv text-center">
+            <img src="images/delicious_food.png">
+            <div><i id="mainIcon" class="fa-solid fa-list-ul fs-3"></i><br></div>
+            <div class="mb-3"><i class="fa-solid fa-globe d-block"></i><i class="fa-solid fa-share-nodes"></i></div>
+        </div>
+
+    </div>
+
+    <div class="home overflow-auto">
+
+        <div id="parent" class="container p-5 pe-2">
+
+            
+            <div id="inputsBox" style="display: none;">
+                <div class="row g-3 ps-4">
+                    <div class="col">
+                      <input id="nameInput" type="text" class="form-control" placeholder="Search by name" aria-label="First name">
+                    </div>
+                    <div class="col">
+                      <input id="letterInput" type="text" class="form-control" placeholder="Search by first letter" aria-label="Last name">
+                    </div>
+                </div> 
+            </div>
+            
+
+            <div id="box" class="row pt-4 ps-4 g-4">
+
+                <!-- <div class="col-md-3">
+                    <div class="meal">
+                        <img class="w-100" src="images/meal.jpg" alt="meal photo">
+                        <div class="bg-light bg-opacity-75 p-3 fw-bold layer"><p class="fs-4">Chicken Meal</p></div>
+                    </div>
+                </div> -->
+
+            </div>
+            
+
+        </div>
+
+
+    </div>
+    
+
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

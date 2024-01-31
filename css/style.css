@@ -1,0 +1,139 @@
+/*------------------------------------ Loading & Home Div Styling :- --------------------------------------*/
+.home{
+    height: 100vh;
+    background: url(../images/food.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.loading{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- SideBAR Styling :- ----------------------------------------------*/
+
+#sideBar{
+    position: fixed;
+    top:0 ; 
+    bottom: 0;
+    z-index: 9999;
+    display:flex;
+}
+.navList li{
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.navList li:hover , #sideBarInner i:hover{
+    color: rgb(205, 90, 90);
+}
+.iconsDiv img{
+    width: 50px;
+    display: block;
+}
+
+#sideBarInner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sideBarOutter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#mainIcon , .fa-share-nodes , .fa-globe , #sideBarInner i{
+    cursor: pointer;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- Home Layout CSS :- ----------------------------------------------*/
+
+.meal{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.meal img{
+    border-radius: 10px;
+}
+.layer{
+    position: absolute;
+    border-radius: 10px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;  
+    display: flex;
+    align-items: center;
+}
+
+.meal:hover .layer{
+    top: 0;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- Category Layout CSS :- ------------------------------------------*/
+
+.desc{
+    font-size: 17px;
+    color: black;
+ }
+
+.meal2{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.meal2 img{
+    border-radius: 10px;
+}
+.layer2{
+    position: absolute;
+    border-radius: 10px;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s;  
+}
+.meal2:hover .layer2{
+    top: 0;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- Area Layout CSS :- ------------------------------------------*/
+.country{
+    cursor: pointer;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- Ingrediants Layout CSS :- ------------------------------------------*/
+.ingred{
+    cursor: pointer;
+    height: 200px;
+}
+.ingredImage{
+    width: 60px;
+}
+/* -------------------------------------------------------------------------------------------------------- */
+/*---------------------------------------- Home each meal detail CSS :- ------------------------------------------*/
+
+.mySpan{
+   cursor:text;
+   color: black;
+}
+.mySpan:hover{
+    color: black;
+}
+/* -------------------------------------------------------------------------------------------------------- */
